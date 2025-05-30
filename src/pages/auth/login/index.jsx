@@ -26,7 +26,7 @@ export default function Login() {
       localStorage.setItem('user', JSON.stringify(data));
       dispatch(setUser(data));
       if (data.maLoaiNguoiDung === ROLE.ADMIN) {
-        navigate(PATH.MOVIE_MANAGEMENT);
+        navigate(PATH.DASHBOARD);
       }
       if (data.maLoaiNguoiDung === ROLE.USER) {
         navigate(PATH.HOME);

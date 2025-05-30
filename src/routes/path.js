@@ -5,5 +5,6 @@ export const PATH = {
   REGISTER: '/auth/register',
   USER_MANAGEMENT: '/admin/user-management',
   MOVIE_MANAGEMENT: '/admin/movie-management',
+  DASHBOARD: '/admin/dashboard',
   NOT_FOUND: '*',
 };

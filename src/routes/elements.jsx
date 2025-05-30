@@ -10,6 +10,7 @@ import { PATH } from './path';
 import HomeLayout from '@/components/layouts/home-layout';
 import AuthLayout from '@/components/layouts/auth';
 import DashboardLayout from '@/components/layouts/dashboard';
+import DashboardAdmin from '@/pages/admin/dashboard';
 
 export default function useRouterElements() {
   const elements = useRoutes([
@@ -43,6 +44,14 @@ export default function useRouterElements() {
         <AuthLayout>
           <Register />
         </AuthLayout>
+      ),
+    },
+    {
+      path: PATH.DASHBOARD,
+      element: (
+        <DashboardLayout>
+          <DashboardAdmin />
+        </DashboardLayout>
       ),
     },
     {
