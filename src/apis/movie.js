@@ -13,3 +13,13 @@ export const listMovieApi = async (data) => {
     throw error;
   }
 };
+
+export const addMovieApi = async (formData) => {
+  try {
+    const response = await fetcher.post('/QuanLyPhim/ThemPhimUploadHinh', formData);
+    return response.data.content;
+  } catch (error) {
+    console.error('Error adding movie:', error);
+    throw error;
+  }
+};
